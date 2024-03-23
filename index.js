@@ -13,7 +13,7 @@ function getRegion() {
 
     var api_link = `http://api.weatherapi.com/v1/current.json?key=c74290ef12984eb39a2112628240703&q=${location}&aqi=no`;
     
-    fetch(api_link, {referrerPolicy: "unsafe_url"})
+    fetch(api_link)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
@@ -29,6 +29,7 @@ function getRegion() {
                 "\n Wind : " + data.current.wind_kph + " km/h";
         })
         .catch(error => {
+            console.log(error);
             para.innerText = "Could not find weather data";
         });
 }
