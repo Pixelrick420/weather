@@ -5,9 +5,9 @@ var lochead = document.getElementById('lochead');
 search.addEventListener('click', getRegion);
 
 function getRegion() {
-    var location = input.value.trim(); // Trim whitespace from input
+    var location = input.value.trim(); 
+    lochead.innerText = "";
     if (location === '') {
-        lochead.innerText = "";
         para.innerText = "Please enter a location.";
         return;
     }
