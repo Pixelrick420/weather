@@ -1,0 +1,59 @@
+body {
+    background-image: linear-gradient(to bottom right,#B4D4FF 0% 25%,
+                                             #86B6F6 25% 50%,
+                                             #176B87 50% 75%,
+                                             #000000 75% 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 750px;
+}
+html {
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+#title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#searchbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#searchbox *{
+    border-radius: 5px;
+}
+input{
+    background-color: black;
+    color: #B4D4FF;
+    width: 300px;
+    height: 31px;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+button {
+    background-image: url(search.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 35px;
+    height: 36px;
+}
+::placeholder {
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+#lochead, #result{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
