@@ -15,6 +15,7 @@ function getRegion() {
     
     fetch(api_link)
         .then(response => {
+            referrerPolicy: "unsafe_url";
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
