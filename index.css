@@ -1,4 +1,4 @@
-html {
+/*html {
     font-family: "Kode Mono", monospace;
     font-optical-sizing: auto;
     font-weight: normal;
@@ -70,4 +70,94 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}*/
+html {
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    background-image: linear-gradient(to bottom right,#B4D4FF 0% 25%,
+                                                #86B6F6 25% 50%,
+                                                #176B87 50% 75%,
+                                                #000000 75% 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#title {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center; 
+    height: 10vh; 
+    font-size: 2em; 
+    color: #000000; 
+}
+
+#searchbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+#searchbox *{
+    border-radius: 5px;
+}
+
+input {
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    background-color: black;
+    color: #B4D4FF;
+    width: 80%; 
+    max-width: 300px; 
+    height: 40px; 
+    font-size: 1.2em; 
+    padding: 2px; 
+    border: none;
+}
+
+button {
+    background-image: url(search.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 50px; 
+    height: 50px; 
+    border: none; 
+}
+
+::placeholder {
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+#lochead {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    margin-top: 10px; 
+    padding-top: 10px;
+    font-size: 1.2em;
+}
+#result {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    font-size: 1.2em;
 }
