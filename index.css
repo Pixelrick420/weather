@@ -1,36 +1,46 @@
-body {
+html {
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
     background-image: linear-gradient(to bottom right,#B4D4FF 0% 25%,
-                                             #86B6F6 25% 50%,
-                                             #176B87 50% 75%,
-                                             #000000 75% 100%);
+                                                #86B6F6 25% 50%,
+                                                #176B87 50% 75%,
+                                                #000000 75% 100%);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
     padding: 0;
-    height: 750px;
+    height: 100%; 
 }
-html {
-  font-family: "Kode Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight: normal;
-  font-style: normal;
-  height: 100%;
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%; 
 }
+
 #title {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    height: 30px;
+    width: auto;
 }
+
 #searchbox {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 20px; 
 }
+
 #searchbox *{
     border-radius: 5px;
 }
-input{
+
+input {
     background-color: black;
     color: #B4D4FF;
     width: 300px;
@@ -40,6 +50,7 @@ input{
     font-weight: normal;
     font-style: normal;
 }
+
 button {
     background-image: url(search.jpg);
     background-position: center;
@@ -47,38 +58,16 @@ button {
     width: 35px;
     height: 36px;
 }
+
 ::placeholder {
-  font-family: "Kode Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight: normal;
-  font-style: normal;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
 }
-#lochead, #result{
+
+#lochead, #result {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-}
-@media (max-width: 900px){
-    body {
-        background-image: linear-gradient(to bottom right,#B4D4FF 0% 25%,
-                                                 #86B6F6 25% 50%,
-                                                 #176B87 50% 75%,
-                                                 #000000 75% 100%);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin: 0;
-        padding: 0;
-        /*height: 750px;*/
-    }
-    input{
-        background-color: black;
-        color: #B4D4FF;
-        width: 300px;
-        height: 31px;
-        font-family: "Kode Mono", monospace;
-        font-optical-sizing: auto;
-        font-weight: normal;
-        font-style: normal;
-    }
 }
