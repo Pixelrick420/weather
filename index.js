@@ -13,9 +13,8 @@ function getRegion() {
 
     var api_link = `http://api.weatherapi.com/v1/current.json?key=c74290ef12984eb39a2112628240703&q=${location}&aqi=no`;
     
-    fetch(api_link)
+    fetch(api_link, {referrerPolicy: "unsafe_url"})
         .then(response => {
-            referrerPolicy: "unsafe_url";
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
