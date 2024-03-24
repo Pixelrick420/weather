@@ -12,7 +12,7 @@ function getRegion() {
         return;
     }
     else if(location == 2048){
-        para.innerText = "Working on it";
+        window.open("https://pixelrick420.github.io/2048/");
         return;
     }
     
