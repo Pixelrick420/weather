@@ -7,15 +7,18 @@ search.addEventListener('click', getRegion);
 function getRegion() {
     var location = input.value.trim(); 
     lochead.innerText = "";
-    if (location === '') {
-        para.innerText = "Please enter a location.";
-        return;
-    }
-    else if(location == 2048){
+    if(location == 2048){
         window.open("https://pixelrick420.github.io/2048/");
         return;
     }
-    
+    else if(location.toUpperCase() === "german".toUpperCase()){
+        window.open("https://pixelrick420.github.io/German-Colours/");
+        return;
+    }
+    else if (location === '') {
+        para.innerText = "Please enter a location.";
+        return;
+    }
     else{
         var api_link = `http://api.weatherapi.com/v1/current.json?key=c74290ef12984eb39a2112628240703&q=${location}&aqi=no`;
     
