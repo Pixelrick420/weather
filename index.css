@@ -130,7 +130,12 @@ input {
     padding: 2px; 
     border: none;
 }
-
+button:hover {
+    box-shadow: 2px 2px 0px 0px #000000;
+}
+input:hover{
+    box-shadow: 2px 2px 0px 0px #176B87;
+}
 button {
     background-image: url(search.jpg);
     background-position: center;
