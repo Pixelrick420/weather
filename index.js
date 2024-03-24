@@ -11,9 +11,11 @@ function getRegion() {
         para.innerText = "Please enter a location.";
         return;
     }
-    else if(location.toUpperCase() === "thanos"){
-        para.innerText = "easter egg in deevelopment";
+    else if(location == 2048){
+        para.innerText = "Working on it";
+        return;
     }
+    
     else{
         var api_link = `http://api.weatherapi.com/v1/current.json?key=c74290ef12984eb39a2112628240703&q=${location}&aqi=no`;
     
